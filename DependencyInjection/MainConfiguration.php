@@ -205,6 +205,7 @@ class MainConfiguration implements ConfigurationInterface
 
         $firewallNodeBuilder
             ->scalarNode('pattern')->end()
+            ->scalarNode('host')->end()
             ->booleanNode('security')->defaultTrue()->end()
             ->scalarNode('request_matcher')->end()
             ->scalarNode('access_denied_url')->end()
